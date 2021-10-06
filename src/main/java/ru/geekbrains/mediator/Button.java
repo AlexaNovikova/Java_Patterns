@@ -1,8 +1,8 @@
 package ru.geekbrains.mediator;
 
 public class Button {
-    private PultMediator pult;
 
+    private PultMediator pult;
 
     public void setPult(PultMediator pult) {
         this.pult = pult;

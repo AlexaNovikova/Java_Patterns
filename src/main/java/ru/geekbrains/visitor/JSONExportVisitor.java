@@ -5,12 +5,12 @@ import java.util.List;
 public class JSONExportVisitor implements  Visitor{
 
     public String export(List<Shape> shapes){
-        StringBuffer stringBuffer = new StringBuffer();
+        StringBuilder stringBuilder = new StringBuilder();
         for (Shape shape: shapes){
             String rez = shape.accept(this);
-            stringBuffer.append(rez);
+            stringBuilder.append(rez);
         }
-        return stringBuffer.toString();
+        return stringBuilder.toString();
     }
     @Override
     public String visitDot(Dot dot) {

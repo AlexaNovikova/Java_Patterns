@@ -10,5 +10,7 @@ public class Main {
         button.setPult(pult);
         pult.press();
         pult.press();
+        button.press();
+        button.press();
     }
 }
